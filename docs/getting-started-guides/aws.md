@@ -36,7 +36,7 @@ This process takes about 5 to 10 minutes. Once the cluster is up, the IP address
 as well as information about the default services running in the cluster (monitoring, logging, dns). User credentials and security
 tokens are written in `~/.kube/config`, they will be necessary to use the CLI or the HTTP Basic Auth.
 
-By default, the script will provision a new VPC and a 4 node k8s cluster in us-west-2a (Oregon) with EC2 instances running on Ubuntu.
+By default, the script will provision a new VPC and a 4 node k8s cluster in us-west-2a (Oregon) with EC2 instances running on Debian (jessie).
 You can override the variables defined in [config-default.sh](http://releases.k8s.io/{{page.githubbranch}}/cluster/aws/config-default.sh) to change this behavior as follows:
 
 ```shell
